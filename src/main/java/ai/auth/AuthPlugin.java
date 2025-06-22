@@ -50,7 +50,6 @@ public final class AuthPlugin extends JavaPlugin {
         getCommand("resetpassword").setExecutor(new ResetpasswordCommand(this));
         getLogger().info("Auth plugin włączony.");
     }
-
     @Override
     public void onDisable() {
         if (dataSource != null && !dataSource.isClosed()) {
