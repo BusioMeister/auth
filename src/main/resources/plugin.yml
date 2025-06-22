@@ -1,0 +1,18 @@
+name: auth
+version: '${project.version}'
+main: ai.auth.AuthPlugin
+api-version: '1.21.4'
+commands:
+  register:
+    description: Rejestracja gracza.
+  login:
+    description: Logowanie gracza.
+  toggleiplogin:
+    description: włącz/wyłacz logowanie automatycznie przez sprawdznie ip z ostatniego logowania.
+  whois:
+      description: Sprawdź dane gracza.
+      usage: /whois <nick>
+  changepassword:
+    description: resetuje hasło
+  resetpassword:
+    description: reset hasła dla admina
